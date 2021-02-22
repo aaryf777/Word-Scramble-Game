@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    background-color:  rgb(139, 25, 139);
+}
+
+h1 {
+    padding: 30px 16px;
+    font-family: 'Potta One', cursive;
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    text-shadow: 0 1px 0 #efefef,
+        0 2px 0 #efefef,
+        0 3px 0 #efefef,
+        0 4px 0 #efefef,
+        0 30px 5px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 180, 243);
+}
+
+.gamearea {
+    font-family: sans-serif;
+    width: 40%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(212, 97, 212);
+    box-shadow: 0 0 6px 8px rgb(179, 29, 179);
+       
+}
+.gamearea.hide {
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%)scale(0.9);
+}
+#continue {
+    margin-top: 35px;
+    font-family: cursive;
+    font-size: 1.2rem;
+    font-weight: 550;
+    color: rgb(139, 25, 139);
+}
+
+input {
+    width: 40%;
+    padding: 12px 4px;
+    text-align: center;
+    border-radius: 21px;
+    outline: none;
+    border: none;
+    background-color: #dff9fb;
+    color: darkred;
+    font-size: 1.1rem;
+    font-family: cursive;
+    margin: 2rem 0;
+    
+}
+
+button.btn {
+    text-transform: uppercase;
+    padding: 4px 8px;
+    font-size: 1.2rem;
+    background: white;
+    font-weight: 600;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.65, -0.25, 0.25, 1.95);
+    font-family: cursive;
+    border-radius: 11px;
+    outline: none;
+   
+ 
+}
+.msg {
+    color: darkviolet;
+    font-size: 1.5rem;
+    font-family: cursive;
+    margin-bottom: 15px;
+}
+
+button.btn:hover,
+button.btn:focus,
+button.btn:active {
+    letter-spacing: 0.225rem;
+    word-spacing: 0.2rem;
+    cursor: pointer;
+    transform: scale(0.93);
+}
+
+
+.resultpage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(212, 97, 212);
+    box-shadow: 0 0 6px 8px rgb(179, 29, 179);
+    width: 40%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.resultpage {
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%)scale(0.9);
+}
+.resultpage.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%)scale(0.9);
+}
+.resultpage p {
+    font-family: cursive;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    
+}
+.resultpage .btn {
+    margin-top: 30px;
+    
+  
+}
+.hidden {
+    display: none;
+}

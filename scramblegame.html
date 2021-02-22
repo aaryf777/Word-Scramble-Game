@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Source+Sans+Pro:ital@1&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the word</title>
+
+    <!--CSS File-->
+    <link rel="stylesheet" href="Scramblegame.css">
+</head>
+
+<body>
+    <header>
+        <h1>Guess the Celebrity</h1>
+    </header>
+    <section>
+        <div class="gamearea">
+            <h3 class="msg"></h3>
+            <input type="text" class="hidden">
+            <button class="btn">Start</button>
+            <p id="continue" class="hidden"> Press Enter to Continue</p>
+        </div>
+        <div class="resultpage">
+            <p>Completed</p>
+            <p>Score: <span id="score"></span></p>
+            <button class="btn" id="end">Exit</button>
+        </div>
+    </section>
+
+    <!--JavaScript Files-->
+    <script src="Scramblegame.js"></script>
+</body>
+
+</html>
